@@ -74,7 +74,7 @@ Route::get('/Service',function(){
         Route::delete('delete/{id}', [Taskcontroller::class, 'delete'])->name('task.delete');;
        Route::put('edit/{id}', [Taskcontroller::class, 'showData'])->name('task.edit');
        Route::put('edit', [Taskcontroller::class, 'update']);
-       Route::patch('update/{id}', [Taskcontroller::class, 'showData2'])->name('task.edit');
+       Route::patch('update/{id}', [Taskcontroller::class, 'showData2'])->name('task.update');
        Route::patch('update', [Taskcontroller::class, 'update2']);
 
 
